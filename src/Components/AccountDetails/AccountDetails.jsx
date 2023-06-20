@@ -1,0 +1,258 @@
+import React from "react";
+
+const AccountDetails = () => {
+  return (
+    <div className="mt-[60px] px-4">
+      <div className=" grid grid-cols-2 gap-10">
+        <div className="">
+          <h1 className="text-xl font-bold text-[rgba(0, 0, 0, 0.54)] text-center mb-5">
+            Account Details
+          </h1>
+
+          {/*  */}
+          <from className="">
+            <div class=" ">
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="name"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="name"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  Name *
+                </label>
+              </div>
+
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="nid"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="nid"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  NID*
+                </label>
+              </div>
+
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="fatherName"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="fatherName"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  Father's Name *
+                </label>
+              </div>
+
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="motherName"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="motherName"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  Mother's Name *
+                </label>
+              </div>
+
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="address"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="address"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  Address
+                </label>
+              </div>
+
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="district"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="district"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  District *
+                </label>
+              </div>
+
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="thana"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="thana"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  thana/Upazila *
+                </label>
+              </div>
+
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="email"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="email"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  Email *
+                </label>
+              </div>
+
+              <div className="flex justify-center mb-10">
+                <button className="btn btn-sm btn-primary text-white ">
+                  Profile Save
+                </button>
+              </div>
+            </div>
+          </from>
+        </div>
+
+        {/*  */}
+
+        <div className="">
+          <h1 className="text-xl font-bold text-[rgba(0, 0, 0, 0.54)] text-center mb-5">
+            Password change
+          </h1>
+
+          {/*  */}
+          <from className="">
+            <div class=" ">
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="currentPass"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="currentPass"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  Current Password *
+                </label>
+              </div>
+
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="newPass1"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="newPass1"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  New Password *
+                </label>
+              </div>
+
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="newPass2"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="newPass2"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  New Password *
+                </label>
+              </div>
+
+              <div className="flex justify-center mb-10">
+                <button className="btn btn-sm btn-primary text-white ">
+                  Change
+                </button>
+              </div>
+            </div>
+          </from>
+
+          {/* Change Pin  */}
+
+          <form className="my-10">
+            <h1 className="text-xl font-bold text-[rgba(0, 0, 0, 0.54)] text-center mb-5">
+              Pin change
+            </h1>
+
+            <div class=" ">
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="currentPin"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="currentPin"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  Current PIN *
+                </label>
+              </div>
+
+              <div class="relative mb-10">
+                <input
+                  type="text"
+                  id="newPIN"
+                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  autocomplete="off"
+                />
+                <label
+                  for="newPIN"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                >
+                  New PIN *
+                </label>
+              </div>
+
+              <div className="flex justify-center mb-10">
+                <button className="btn btn-sm btn-primary text-white ">
+                  Change
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AccountDetails;

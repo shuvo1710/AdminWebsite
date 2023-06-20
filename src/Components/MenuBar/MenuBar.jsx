@@ -36,7 +36,10 @@ const MenuBar = () => {
           <MdDashboard className="text-xl " /> <span>Account Dashboard</span>
         </Link>
 
-        <Link className="flex items-center gap-3 font-semibold mb-4">
+        <Link
+          to="/AccountDetails"
+          className="flex items-center gap-3 font-semibold mb-4"
+        >
           <AiFillInfoCircle className="text-xl " /> <span>Account Details</span>
         </Link>
 

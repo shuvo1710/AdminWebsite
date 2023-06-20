@@ -1,10 +1,33 @@
-import React from "react";
 import { BiHomeAlt } from "react-icons/bi";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import MenuBar from "../MenuBar/MenuBar";
 import { Outlet } from "react-router-dom";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import { useEffect, useRef, useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 
 const MainDashboard = () => {
+  const [opnetMenu, setOpenMenu] = useState(false);
+  const divRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (divRef.current && !divRef.current.contains(event.target)) {
+        console.log("Clicked outside of the div!");
+
+        setOpenMenu(!opnetMenu);
+
+        // Perform any other desired actions here
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className="container mx-auto mt-5 ">
       <div className=" bg-[#F2F2F2] py-2 flex items-end gap-2 px-4 rounded-md">
@@ -23,15 +46,39 @@ const MainDashboard = () => {
       </div>
 
       {/* dashboard Section  */}
-      <div className=" flex  mt-8">
+      <div className=" flex  mt-8 relative">
         {/* menubar  */}
-        <div className=" w-[30%]">
+        <div className=" lg:block hidden w-[20%] min-w-[280px]">
           <MenuBar />
         </div>
 
         {/* dashboard */}
-        <div className="w-[70%]">
+        <div className="lg:w-[80%] w-full max-w-full">
+          <h1 className="text-[16px] py-3 pl-3  border-b border-[rgba(0,0,0,0.31)] shadow-md flex justify-between">
+            <BsThreeDotsVertical
+              // ref={!opnetMenu && divRef}
+              onClick={() => setOpenMenu(true)}
+              className="text-xl lg:hidden block cursor-pointer"
+            />
+            My Account
+          </h1>
           <Outlet />
+        </div>
+        {/* absulate menuvar  */}
+
+        <div
+          // ref={divRef}
+          className={`${
+            opnetMenu ? "block" : "hidden"
+          } lg:hidden  w-[20%] min-w-[280px] absolute top-0 left-0 bg-white h-full`}
+        >
+          <div className="absolute top-0 right-0">
+            <AiOutlineClose
+              onClick={() => setOpenMenu(false)}
+              className="text-xl text-primary"
+            />
+          </div>
+          <MenuBar />
         </div>
       </div>
     </div>
