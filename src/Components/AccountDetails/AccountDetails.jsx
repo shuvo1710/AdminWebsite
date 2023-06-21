@@ -3,7 +3,7 @@ import React from "react";
 const AccountDetails = () => {
   return (
     <div className="mt-[60px] px-4">
-      <div className=" grid grid-cols-2 gap-10">
+      <div className=" grid md:grid-cols-2 gap-10">
         <div className="">
           <h1 className="text-xl font-bold text-[rgba(0, 0, 0, 0.54)] text-center mb-5">
             Account Details
@@ -242,6 +242,26 @@ const AccountDetails = () => {
                 </label>
               </div>
 
+              <div className="flex justify-center mb-10">
+                <button className="btn btn-sm btn-primary text-white ">
+                  Change
+                </button>
+              </div>
+            </div>
+          </form>
+
+          {/* Photo Upload  */}
+
+          <form className="my-10">
+            <h1 className="text-xl font-bold text-[rgba(0, 0, 0, 0.54)] text-center mb-5">
+              Upload your photo
+            </h1>
+
+            <div class=" ">
+              <input
+                type="file"
+                className="file-input  file-input-primary w-full mb-5 "
+              />
               <div className="flex justify-center mb-10">
                 <button className="btn btn-sm btn-primary text-white ">
                   Change
