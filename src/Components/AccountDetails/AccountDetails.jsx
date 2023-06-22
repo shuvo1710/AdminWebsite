@@ -5,7 +5,7 @@ const AccountDetails = () => {
     <div className="mt-[60px] px-4">
       <div className=" grid md:grid-cols-2 gap-10">
         <div className="">
-          <h1 className="text-xl font-bold text-[rgba(0, 0, 0, 0.54)] text-center mb-5">
+          <h1 className="text-xl font-bold text-[#616161] text-center mb-5">
             Account Details
           </h1>
 
@@ -144,7 +144,7 @@ const AccountDetails = () => {
         {/*  */}
 
         <div className="">
-          <h1 className="text-xl font-bold text-[rgba(0, 0, 0, 0.54)] text-center mb-5">
+          <h1 className="text-xl font-bold text-[#616161] text-center mb-5">
             Password change
           </h1>
 
@@ -207,7 +207,7 @@ const AccountDetails = () => {
           {/* Change Pin  */}
 
           <form className="my-10">
-            <h1 className="text-xl font-bold text-[rgba(0, 0, 0, 0.54)] text-center mb-5">
+            <h1 className="text-xl font-bold text-[#616161] text-center mb-5">
               Pin change
             </h1>
 
@@ -253,7 +253,7 @@ const AccountDetails = () => {
           {/* Photo Upload  */}
 
           <form className="my-10">
-            <h1 className="text-xl font-bold text-[rgba(0, 0, 0, 0.54)] text-center mb-5">
+            <h1 className="text-xl font-bold text-[#616161] text-center mb-5">
               Upload your photo
             </h1>
 

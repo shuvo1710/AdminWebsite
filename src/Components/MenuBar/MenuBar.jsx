@@ -11,7 +11,7 @@ import { AiOutlineGateway } from "react-icons/ai";
 
 const MenuBar = () => {
   return (
-    <div className="pt-10 border-r">
+    <div className="pt-10 border-r bg-white">
       <div className="flex justify-center">
         <div className="avatar ">
           <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -43,26 +43,41 @@ const MenuBar = () => {
           <AiFillInfoCircle className="text-xl " /> <span>Account Details</span>
         </Link>
 
-        <Link className="flex items-center gap-3 font-semibold mb-4">
+        <Link
+          to="/PurchaseHistory"
+          className="flex items-center gap-3 font-semibold mb-4"
+        >
           <BsCartPlusFill className="text-xl " /> <span>Purchase History</span>
         </Link>
 
-        <Link className="flex items-center gap-3 font-semibold mb-4">
+        <Link
+          to="/commissionWithdraw"
+          className="flex items-center gap-3 font-semibold mb-4"
+        >
           <AiOutlineGateway className="text-xl " />{" "}
           <span>Commission Withdraw</span>
         </Link>
 
-        <Link className="flex items-center gap-3 font-semibold mb-4">
+        <Link
+          to="/CommissionLedger"
+          className="flex items-center gap-3 font-semibold mb-4"
+        >
           <AiOutlineGateway className="text-xl " />{" "}
           <span>Commission Ledger</span>
         </Link>
 
-        <Link className="flex items-center gap-3 font-semibold mb-4">
+        <Link
+          to="/Transactions"
+          className="flex items-center gap-3 font-semibold mb-4"
+        >
           <AiOutlineCreditCard className="text-xl " /> <span>Transactions</span>
         </Link>
 
-        <Link className="flex items-center gap-3 font-semibold mb-4">
-          <BsCash className="text-xl " /> <span>balance Transfer</span>
+        <Link
+          to="/BalanceTransfer"
+          className="flex items-center gap-3 font-semibold mb-4"
+        >
+          <BsCash className="text-xl " /> <span>Balance Transfer</span>
         </Link>
 
         <Link className="flex items-center gap-3 font-semibold mb-4">

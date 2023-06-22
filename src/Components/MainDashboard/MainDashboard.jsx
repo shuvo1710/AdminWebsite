@@ -70,7 +70,7 @@ const MainDashboard = () => {
           // ref={divRef}
           className={`${
             opnetMenu ? "block" : "hidden"
-          } lg:hidden  w-[20%] min-w-[280px] absolute top-0 left-0 bg-white h-full`}
+          } lg:hidden  w-[20%] min-w-[280px] absolute top-0 left-0 !bg-white h-full z-40`}
         >
           <div className="absolute top-0 right-0">
             <AiOutlineClose
