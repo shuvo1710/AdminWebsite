@@ -3,7 +3,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import MenuBar from "../MenuBar/MenuBar";
 import { Outlet } from "react-router-dom";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
 const MainDashboard = () => {
