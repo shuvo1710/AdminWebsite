@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="bg-primary">
       <div className="container mx-auto">
-        <div className="flex justify-between sm:flex-row flex-col  pb-10 pt-5 text-[#dcedc8] ">
+        <div className="flex justify-between sm:flex-row flex-col  pb-20 pt-5 text-[#dcedc8] ">
           <div className="">
             <p>Copyright © 2019 All Rights Reserved</p>
           </div>

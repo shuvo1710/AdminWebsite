@@ -72,7 +72,7 @@ const AccountDetails = () => {
                 </label>
               </div>
 
-              <div class="relative mb-10">
+              <div class="relative mb-5">
                 <input
                   type="text"
                   id="address"
@@ -87,34 +87,54 @@ const AccountDetails = () => {
                 </label>
               </div>
 
-              <div class="relative mb-10">
-                <input
+              <div class="relative mb-5">
+                <label
+                  for="email"
+                  class=" text-sm left-0 text-gray-600 cursor-text top-0 peer-focus:text-primary transition-all"
+                >
+                  District *
+                </label>
+                <select
                   type="text"
                   id="district"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
-                />
-                <label
+                >
+                  <option selected value="">
+                    District *
+                  </option>
+                  <option value="">Hello</option>
+                  <option value="">Hello</option>
+                  <option value="">Hello</option>
+                </select>
+                {/* <label
                   for="district"
                   class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   District *
-                </label>
+                </label> */}
               </div>
 
               <div class="relative mb-10">
-                <input
+                <label
+                  for="email"
+                  class=" text-sm left-0 text-gray-600 cursor-text top-0 peer-focus:text-primary transition-all"
+                >
+                  Thana/Upazila *
+                </label>
+                <select
                   type="text"
-                  id="thana"
+                  id="district"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
-                />
-                <label
-                  for="thana"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
-                  thana/Upazila *
-                </label>
+                  <option selected value="">
+                    Thana/Upoz *
+                  </option>
+                  <option value="">Hello</option>
+                  <option value="">Hello</option>
+                  <option value="">Hello</option>
+                </select>
               </div>
 
               <div class="relative mb-10">

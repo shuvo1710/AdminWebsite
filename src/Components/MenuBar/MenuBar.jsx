@@ -80,7 +80,10 @@ const MenuBar = () => {
           <BsCash className="text-xl " /> <span>Balance Transfer</span>
         </Link>
 
-        <Link className="flex items-center gap-3 font-semibold mb-4">
+        <Link
+          to="/singin"
+          className="flex items-center gap-3 font-semibold mb-4"
+        >
           <AiOutlinePoweroff className="text-xl " /> <span>Logout</span>
         </Link>
       </div>

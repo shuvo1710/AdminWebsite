@@ -12,7 +12,7 @@ const MyAccount = () => {
       </div>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mt-10">
         <div className="  shadow-xl">
-          <h1 className="text-[23px] shadow-md p-2 pl-5 font-semibold">
+          <h1 className="text-[23px] shadow p-2 pl-5 font-semibold">
             Account Information
           </h1>
           <div className="p-5">
@@ -23,7 +23,7 @@ const MyAccount = () => {
         </div>
 
         <div className="  shadow-xl">
-          <h1 className="text-[23px] shadow-md p-2 pl-5 font-semibold flex items-center gap-5">
+          <h1 className="text-[23px] shadow p-2 pl-5 font-semibold flex items-center gap-5">
             <span>Business Status</span>
             <Link>
               {" "}
@@ -36,7 +36,7 @@ const MyAccount = () => {
         </div>
 
         <div className="  shadow-xl">
-          <h1 className="text-[23px] shadow-md p-2 pl-5 font-semibold flex items-center gap-5">
+          <h1 className="text-[23px] shadow p-2 pl-5 font-semibold flex items-center gap-5">
             <span>Account Information</span>
             <Link>
               {" "}

@@ -4,10 +4,10 @@ import { MdExitToApp } from "react-icons/md";
 
 const SignIn = () => {
   return (
-    <div className="container mx-auto text-[#616161] px-4 mb-10">
-      <div className="grid md:grid-cols-2 mt-8 gap-5">
+    <div className="container mx-auto text-[#616161] px-4 mb-10 min-h-[60vh]">
+      <div className="grid md:grid-cols-2 mt-8 gap-10 border-l p-5 border-b shadow">
         <form>
-          <h1 className="text-[21px] text-center font-bold mt-5 py-5 shadow">
+          <h1 className="text-[21px] text-center font-bold mt-5 py-5 ">
             Sign In
           </h1>
 
@@ -42,7 +42,7 @@ const SignIn = () => {
         </form>
 
         <form action="">
-          <h1 className="text-[21px] text-center font-bold mt-5 py-5 shadow">
+          <h1 className="text-[21px] text-center font-bold mt-5 py-5 ">
             Forgot password? Send your password by SMS or Email!
           </h1>
 

@@ -8,25 +8,6 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const MainDashboard = () => {
   const [opnetMenu, setOpenMenu] = useState(false);
-  const divRef = useRef(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (divRef.current && !divRef.current.contains(event.target)) {
-        console.log("Clicked outside of the div!");
-
-        setOpenMenu(!opnetMenu);
-
-        // Perform any other desired actions here
-      }
-    };
-
-    document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
 
   return (
     <div className="container mx-auto mt-5 ">
@@ -46,14 +27,14 @@ const MainDashboard = () => {
       </div>
 
       {/* dashboard Section  */}
-      <div className=" flex  mt-8 relative">
+      <div className=" flex gap-5  mt-8 relative">
         {/* menubar  */}
         <div className=" lg:block hidden w-[20%] min-w-[280px]">
           <MenuBar />
         </div>
 
         {/* dashboard */}
-        <div className="lg:w-[80%] w-full max-w-full">
+        <div className="lg:w-[80%] w-full max-w-full border-l">
           <h1 className="text-[16px] py-3 pl-3  border-b border-[rgba(0,0,0,0.31)] shadow-md flex justify-between">
             <BsThreeDotsVertical
               // ref={!opnetMenu && divRef}
