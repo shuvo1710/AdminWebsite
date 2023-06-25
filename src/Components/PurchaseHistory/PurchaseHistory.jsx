@@ -22,9 +22,6 @@ const PurchaseHistory = () => {
               <td>2021-09-30</td>
               <td> N</td>
               <td>Total Amount 6000 BDT and 1 Items</td>
-              <td>
-                <AiFillEye className="text-3xl text-primary cursor-pointer" />{" "}
-              </td>
             </tr>
           </tbody>
         </table>

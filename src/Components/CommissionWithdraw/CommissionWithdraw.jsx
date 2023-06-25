@@ -7,12 +7,12 @@ const CommissionWithdraw = () => {
   console.log(Bank);
 
   return (
-    <div className="text-[#616161] px-4 mb-10">
-      <h1 className="text-[23px] font-bold mt-5 py-5 shadow-md">
+    <div className="text-[#616161] mb-10 shadow-[0_8px_30px_rgb(0,0,0,0.12)] pb-8">
+      <h1 className="text-[23px] font-bold mt-5 p-5 shadow-md">
         Create Withdrawal! Balance: 70.00
       </h1>
 
-      <div className="grid md:grid-cols-2 mt-8 gap-5">
+      <div className="grid md:grid-cols-2 mt-8 gap-5 p-5">
         <div class="relative h-10 w-full min-w-[200px]">
           <input
             class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-primary focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
@@ -52,9 +52,9 @@ const CommissionWithdraw = () => {
       {/* bank statement */}
 
       {Bank && (
-        <div className="grid sm:grid-cols-3 items-center mt-5 gap-5">
+        <div className="grid sm:grid-cols-3 items-center mt-5 gap-5 px-5">
           <div className=" ">
-            <select className="select select-primary w-full focus:p-0  focus:border-none">
+            <select className="select select-primary w-full   focus:border-none">
               <option>Bkash </option>
               <option>Rocekt</option>
             </select>

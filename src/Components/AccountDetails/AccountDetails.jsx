@@ -2,8 +2,8 @@ import React from "react";
 
 const AccountDetails = () => {
   return (
-    <div className="mt-[60px] px-4">
-      <div className=" grid md:grid-cols-2 gap-10">
+    <div className="my-[50px]">
+      <div className=" grid md:grid-cols-2 gap-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-8 pt-5">
         <div className="">
           <h1 className="text-xl font-bold text-[#616161] text-center mb-5">
             Account Details

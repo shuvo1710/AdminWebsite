@@ -29,12 +29,12 @@ const MainDashboard = () => {
       {/* dashboard Section  */}
       <div className=" flex gap-5  mt-8 relative">
         {/* menubar  */}
-        <div className=" lg:block hidden w-[20%] min-w-[280px]">
+        <div className=" lg:block hidden w-[20%] min-w-[280px] max-h-[550px] mb-3  sticky top-0">
           <MenuBar />
         </div>
 
         {/* dashboard */}
-        <div className="lg:w-[80%] w-full max-w-full border-l">
+        <div className="lg:w-[80%] w-full max-w-full">
           <h1 className="text-[16px] py-3 pl-3  border-b border-[rgba(0,0,0,0.31)] shadow-md flex justify-between">
             <BsThreeDotsVertical
               // ref={!opnetMenu && divRef}
