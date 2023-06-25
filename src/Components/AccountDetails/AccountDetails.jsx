@@ -12,8 +12,9 @@ const AccountDetails = () => {
           {/*  */}
           <from className="">
             <div class=" ">
-              <div class="relative mb-10">
+              <div class="relative mb-10 inputDiv">
                 <input
+                  required
                   type="text"
                   id="name"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
@@ -27,8 +28,9 @@ const AccountDetails = () => {
                 </label>
               </div>
 
-              <div class="relative mb-10">
+              <div class="relative mb-10 inputDiv">
                 <input
+                  required
                   type="text"
                   id="nid"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
@@ -36,14 +38,15 @@ const AccountDetails = () => {
                 />
                 <label
                   for="nid"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all "
                 >
                   NID*
                 </label>
               </div>
 
-              <div class="relative mb-10">
+              <div class="relative mb-10 inputDiv">
                 <input
+                  required
                   type="text"
                   id="fatherName"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
@@ -57,8 +60,9 @@ const AccountDetails = () => {
                 </label>
               </div>
 
-              <div class="relative mb-10">
+              <div class="relative mb-10 inputDiv">
                 <input
+                  required
                   type="text"
                   id="motherName"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
@@ -72,8 +76,9 @@ const AccountDetails = () => {
                 </label>
               </div>
 
-              <div class="relative mb-5">
+              <div class="relative mb-5 inputDiv">
                 <input
+                  required
                   type="text"
                   id="address"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
@@ -137,8 +142,9 @@ const AccountDetails = () => {
                 </select>
               </div>
 
-              <div class="relative mb-10">
+              <div class="relative mb-10 inputDiv">
                 <input
+                  required
                   type="text"
                   id="email"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
@@ -171,8 +177,9 @@ const AccountDetails = () => {
           {/*  */}
           <from className="">
             <div class=" ">
-              <div class="relative mb-10">
+              <div class="relative mb-10 inputDiv">
                 <input
+                  required
                   type="text"
                   id="currentPass"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
@@ -186,8 +193,9 @@ const AccountDetails = () => {
                 </label>
               </div>
 
-              <div class="relative mb-10">
+              <div class="relative mb-10 inputDiv">
                 <input
+                  required
                   type="text"
                   id="newPass1"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
@@ -201,8 +209,9 @@ const AccountDetails = () => {
                 </label>
               </div>
 
-              <div class="relative mb-10">
+              <div class="relative mb-10 inputDiv">
                 <input
+                  required
                   type="text"
                   id="newPass2"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
@@ -232,8 +241,9 @@ const AccountDetails = () => {
             </h1>
 
             <div class=" ">
-              <div class="relative mb-10">
+              <div class="relative mb-10 inputDiv">
                 <input
+                  required
                   type="text"
                   id="currentPin"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
@@ -247,8 +257,9 @@ const AccountDetails = () => {
                 </label>
               </div>
 
-              <div class="relative mb-10">
+              <div class="relative mb-10 inputDiv">
                 <input
+                  required
                   type="text"
                   id="newPIN"
                   class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"

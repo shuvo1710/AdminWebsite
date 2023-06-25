@@ -53,3 +53,9 @@ a {
 }
 
 /* input style */
+
+.inputDiv input:focus ~ label,
+.inputDiv input:valid ~ label {
+  top: -16px;
+  font-size: 12px;
+}
