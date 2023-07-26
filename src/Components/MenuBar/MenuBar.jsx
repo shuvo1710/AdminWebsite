@@ -43,7 +43,6 @@ const MenuBar = () => {
         </NavLink>
 
         <NavLink
-          activeStyle={{ color: 'red' }}
           to="/AccountDetails"
           className={({ isActive }) =>
             isActive ? 'text-primary navTiems' : ' navTiems'
@@ -53,7 +52,6 @@ const MenuBar = () => {
         </NavLink>
 
         <NavLink
-          activeStyle={{ color: 'red' }}
           to="/PurchaseHistory"
           className={({ isActive }) =>
             isActive ? 'text-primary navTiems' : ' navTiems'
@@ -63,7 +61,6 @@ const MenuBar = () => {
         </NavLink>
 
         <NavLink
-          activeStyle={{ color: 'red' }}
           to="/commissionWithdraw"
           className={({ isActive }) =>
             isActive ? 'text-primary navTiems' : ' navTiems'
@@ -74,7 +71,6 @@ const MenuBar = () => {
         </NavLink>
 
         <NavLink
-          activeStyle={{ color: 'red' }}
           to="/CommissionLedger"
           className={({ isActive }) =>
             isActive ? 'text-primary navTiems' : ' navTiems'
@@ -85,7 +81,6 @@ const MenuBar = () => {
         </NavLink>
 
         <NavLink
-          activeStyle={{ color: 'red' }}
           to="/Transactions"
           className={({ isActive }) =>
             isActive ? 'text-primary navTiems' : ' navTiems'
@@ -95,7 +90,6 @@ const MenuBar = () => {
         </NavLink>
 
         <NavLink
-          activeStyle={{ color: 'red' }}
           to="/BalanceTransfer"
           className={({ isActive }) =>
             isActive ? 'text-primary navTiems' : ' navTiems'
