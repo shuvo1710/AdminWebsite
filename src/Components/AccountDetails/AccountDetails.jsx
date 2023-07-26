@@ -1,9 +1,17 @@
-import React from "react";
+import React from 'react'
+import Select from 'react-select'
+import './AccountDetails.css'
 
 const AccountDetails = () => {
+  const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' },
+  ]
+
   return (
-    <div className="my-[50px]">
-      <div className=" grid md:grid-cols-2 gap-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-8 pt-5">
+    <div className="mt-[50px]">
+      <div className=" grid md:grid-cols-2 gap-10 shadow-[0_3px_3px_rgb(0,0,0,0.2)] px-8 pt-5">
         <div className="">
           <h1 className="text-xl font-bold text-[#616161] text-center mb-5">
             Account Details
@@ -112,6 +120,8 @@ const AccountDetails = () => {
                   <option value="">Hello</option>
                   <option value="">Hello</option>
                 </select>
+
+                {/* <Select className=" mt-2" options={options} /> */}
                 {/* <label
                   for="district"
                   class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
@@ -303,7 +313,7 @@ const AccountDetails = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AccountDetails;
+export default AccountDetails

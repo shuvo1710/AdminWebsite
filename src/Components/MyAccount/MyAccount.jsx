@@ -1,7 +1,7 @@
-import React from "react";
-import bannar from "../../assets/image/bannar.jpg";
-import { Link } from "react-router-dom";
-import { MdModeEditOutline } from "react-icons/md";
+import React from 'react'
+import bannar from '../../assets/image/bannar.jpg'
+import { Link } from 'react-router-dom'
+import { MdModeEditOutline } from 'react-icons/md'
 
 const MyAccount = () => {
   return (
@@ -11,7 +11,7 @@ const MyAccount = () => {
         <img className="w-full max-w-full" src={bannar} alt="" />
       </div>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 my-10">
-        <div className="  shadow-xl">
+        <div className="  shadow-sm">
           <h1 className="text-[23px] shadow p-2 pl-5 font-semibold">
             Account Information
           </h1>
@@ -22,28 +22,28 @@ const MyAccount = () => {
           </div>
         </div>
 
-        <div className="  shadow-xl">
+        <div className="  shadow-sm">
           <h1 className="text-[23px] shadow p-2 pl-5 font-semibold flex items-center gap-5">
             <span>Account Information</span>
             <Link>
-              {" "}
+              {' '}
               <MdModeEditOutline className="text-[23px] " />
             </Link>
           </h1>
           <div className="p-5">
             <p className="mt-1"> Shahidul242</p>
             <p>
-              {" "}
+              {' '}
               <Link className="mt-1 hover:text-primary">Change password</Link>
             </p>
           </div>
         </div>
 
-        <div className="  shadow-xl">
+        <div className="  shadow-sm">
           <h1 className="text-[23px] shadow p-2 pl-5 font-semibold flex items-center gap-5">
             <span>Business Status</span>
             <Link>
-              {" "}
+              {' '}
               <MdModeEditOutline className="text-[23px] " />
             </Link>
           </h1>
@@ -53,7 +53,7 @@ const MyAccount = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MyAccount;
+export default MyAccount

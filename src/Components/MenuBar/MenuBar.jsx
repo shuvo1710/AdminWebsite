@@ -1,13 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { MdDashboard } from "react-icons/md";
+import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import { MdDashboard } from 'react-icons/md'
 import {
   AiFillInfoCircle,
   AiOutlineCreditCard,
   AiOutlinePoweroff,
-} from "react-icons/ai";
-import { BsCartPlusFill, BsCash } from "react-icons/bs";
-import { AiOutlineGateway } from "react-icons/ai";
+} from 'react-icons/ai'
+import { BsCartPlusFill, BsCash } from 'react-icons/bs'
+import { AiOutlineGateway } from 'react-icons/ai'
 
 const MenuBar = () => {
   return (
@@ -32,63 +32,73 @@ const MenuBar = () => {
 
       {/* menu items  */}
       <div className="">
-        <Link className="flex items-center gap-3 font-semibold mb-4">
+        <NavLink
+          activeStyle={{ color: 'red' }}
+          to="/"
+          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
+        >
           <MdDashboard className="text-xl " /> <span>Account Dashboard</span>
-        </Link>
+        </NavLink>
 
-        <Link
+        <NavLink
+          activeStyle={{ color: 'red' }}
           to="/AccountDetails"
-          className="flex items-center gap-3 font-semibold mb-4"
+          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
         >
           <AiFillInfoCircle className="text-xl " /> <span>Account Details</span>
-        </Link>
+        </NavLink>
 
-        <Link
+        <NavLink
+          activeStyle={{ color: 'red' }}
           to="/PurchaseHistory"
-          className="flex items-center gap-3 font-semibold mb-4"
+          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
         >
           <BsCartPlusFill className="text-xl " /> <span>Purchase History</span>
-        </Link>
+        </NavLink>
 
-        <Link
+        <NavLink
+          activeStyle={{ color: 'red' }}
           to="/commissionWithdraw"
-          className="flex items-center gap-3 font-semibold mb-4"
+          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
         >
-          <AiOutlineGateway className="text-xl " />{" "}
+          <AiOutlineGateway className="text-xl " />{' '}
           <span>Commission Withdraw</span>
-        </Link>
+        </NavLink>
 
-        <Link
+        <NavLink
+          activeStyle={{ color: 'red' }}
           to="/CommissionLedger"
-          className="flex items-center gap-3 font-semibold mb-4"
+          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
         >
-          <AiOutlineGateway className="text-xl " />{" "}
+          <AiOutlineGateway className="text-xl " />{' '}
           <span>Commission Ledger</span>
-        </Link>
+        </NavLink>
 
-        <Link
+        <NavLink
+          activeStyle={{ color: 'red' }}
           to="/Transactions"
-          className="flex items-center gap-3 font-semibold mb-4"
+          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
         >
           <AiOutlineCreditCard className="text-xl " /> <span>Transactions</span>
-        </Link>
+        </NavLink>
 
-        <Link
+        <NavLink
+          activeStyle={{ color: 'red' }}
           to="/BalanceTransfer"
-          className="flex items-center gap-3 font-semibold mb-4"
+          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
         >
           <BsCash className="text-xl " /> <span>Balance Transfer</span>
-        </Link>
+        </NavLink>
 
-        <Link
+        <NavLink
           to="/singin"
-          className="flex items-center gap-3 font-semibold mb-4"
+          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
         >
           <AiOutlinePoweroff className="text-xl " /> <span>Logout</span>
-        </Link>
+        </NavLink>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MenuBar;
+export default MenuBar

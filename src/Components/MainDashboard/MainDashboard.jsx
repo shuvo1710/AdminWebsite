@@ -1,13 +1,13 @@
-import { BiHomeAlt } from "react-icons/bi";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import MenuBar from "../MenuBar/MenuBar";
-import { Outlet } from "react-router-dom";
-import { BsThreeDotsVertical } from "react-icons/bs";
-import { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai";
+import { BiHomeAlt } from 'react-icons/bi'
+import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
+import MenuBar from '../MenuBar/MenuBar'
+import { Outlet } from 'react-router-dom'
+import { BsThreeDotsVertical } from 'react-icons/bs'
+import { useState } from 'react'
+import { AiOutlineClose } from 'react-icons/ai'
 
 const MainDashboard = () => {
-  const [opnetMenu, setOpenMenu] = useState(false);
+  const [opnetMenu, setOpenMenu] = useState(false)
 
   return (
     <div className="container mx-auto mt-5 ">
@@ -50,7 +50,7 @@ const MainDashboard = () => {
         <div
           // ref={divRef}
           className={`${
-            opnetMenu ? "block" : "hidden"
+            opnetMenu ? 'block' : 'hidden'
           } lg:hidden  w-[20%] min-w-[280px] absolute top-0 left-0 !bg-white h-full z-40 px-4 `}
         >
           <div className="absolute top-0 right-0">
@@ -63,7 +63,7 @@ const MainDashboard = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MainDashboard;
+export default MainDashboard

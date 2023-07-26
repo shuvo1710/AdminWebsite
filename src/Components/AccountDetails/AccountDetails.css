@@ -1,0 +1,16 @@
+.css-13cymwt-control {
+  /* border-bottom: 1px solid #56842e !important; */
+
+  transition: all 100ms;
+  background-color: none !important;
+  border-color: none !important;
+  border-radius: 0 !important;
+  border-style: solid;
+  border-width: 0px !important;
+  border-bottom: 1px solid #56842e !important;
+  box-sizing: border-box;
+}
+
+.css-1fdsijx-ValueContainer {
+  border: none !important;
+}
