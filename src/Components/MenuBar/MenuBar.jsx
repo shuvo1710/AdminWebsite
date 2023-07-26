@@ -10,6 +10,7 @@ import { BsCartPlusFill, BsCash } from 'react-icons/bs'
 import { AiOutlineGateway } from 'react-icons/ai'
 
 const MenuBar = () => {
+  const routers = ({}) => {}
   return (
     <div className="pt-10 border-r bg-white">
       <div className="flex justify-center">
@@ -33,9 +34,10 @@ const MenuBar = () => {
       {/* menu items  */}
       <div className="">
         <NavLink
-          activeStyle={{ color: 'red' }}
           to="/"
-          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
+          className={({ isActive }) =>
+            isActive ? 'text-primary navTiems' : ' navTiems'
+          }
         >
           <MdDashboard className="text-xl " /> <span>Account Dashboard</span>
         </NavLink>
@@ -43,7 +45,9 @@ const MenuBar = () => {
         <NavLink
           activeStyle={{ color: 'red' }}
           to="/AccountDetails"
-          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
+          className={({ isActive }) =>
+            isActive ? 'text-primary navTiems' : ' navTiems'
+          }
         >
           <AiFillInfoCircle className="text-xl " /> <span>Account Details</span>
         </NavLink>
@@ -51,7 +55,9 @@ const MenuBar = () => {
         <NavLink
           activeStyle={{ color: 'red' }}
           to="/PurchaseHistory"
-          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
+          className={({ isActive }) =>
+            isActive ? 'text-primary navTiems' : ' navTiems'
+          }
         >
           <BsCartPlusFill className="text-xl " /> <span>Purchase History</span>
         </NavLink>
@@ -59,7 +65,9 @@ const MenuBar = () => {
         <NavLink
           activeStyle={{ color: 'red' }}
           to="/commissionWithdraw"
-          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
+          className={({ isActive }) =>
+            isActive ? 'text-primary navTiems' : ' navTiems'
+          }
         >
           <AiOutlineGateway className="text-xl " />{' '}
           <span>Commission Withdraw</span>
@@ -68,7 +76,9 @@ const MenuBar = () => {
         <NavLink
           activeStyle={{ color: 'red' }}
           to="/CommissionLedger"
-          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
+          className={({ isActive }) =>
+            isActive ? 'text-primary navTiems' : ' navTiems'
+          }
         >
           <AiOutlineGateway className="text-xl " />{' '}
           <span>Commission Ledger</span>
@@ -77,7 +87,9 @@ const MenuBar = () => {
         <NavLink
           activeStyle={{ color: 'red' }}
           to="/Transactions"
-          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
+          className={({ isActive }) =>
+            isActive ? 'text-primary navTiems' : ' navTiems'
+          }
         >
           <AiOutlineCreditCard className="text-xl " /> <span>Transactions</span>
         </NavLink>
@@ -85,14 +97,18 @@ const MenuBar = () => {
         <NavLink
           activeStyle={{ color: 'red' }}
           to="/BalanceTransfer"
-          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
+          className={({ isActive }) =>
+            isActive ? 'text-primary navTiems' : ' navTiems'
+          }
         >
           <BsCash className="text-xl " /> <span>Balance Transfer</span>
         </NavLink>
 
         <NavLink
           to="/singin"
-          className="flex items-center gap-3 font-semibold mb-4 hover:text-primary ease-in duration-200"
+          className={({ isActive }) =>
+            isActive ? 'text-primary navTiems' : ' navTiems'
+          }
         >
           <AiOutlinePoweroff className="text-xl " /> <span>Logout</span>
         </NavLink>
