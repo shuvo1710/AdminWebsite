@@ -9,6 +9,10 @@ import { AiOutlineClose } from 'react-icons/ai'
 const MainDashboard = () => {
   const [opnetMenu, setOpenMenu] = useState(false)
 
+  //
+
+  //
+
   return (
     <div className="container mx-auto mt-5 ">
       <div className=" bg-[#F2F2F2] py-2 flex items-end gap-2 px-4 rounded-md">
@@ -35,7 +39,7 @@ const MainDashboard = () => {
 
         {/* dashboard */}
         <div className="lg:w-[80%] w-full max-w-full">
-          <h1 className="text-[16px] py-3 pl-3  border-b border-[rgba(0,0,0,0.31)] shadow-md flex justify-between">
+          <h1 className="text-[16px] py-3 pl-3 shadow flex justify-between">
             <BsThreeDotsVertical
               // ref={!opnetMenu && divRef}
               onClick={() => setOpenMenu(true)}
@@ -53,7 +57,7 @@ const MainDashboard = () => {
             opnetMenu ? 'block' : 'hidden'
           } lg:hidden  w-[20%] min-w-[280px] absolute top-0 left-0 !bg-white h-full z-40 px-4 `}
         >
-          <div className="absolute top-0 right-0">
+          <div className="absolute top-0 right-[15px]">
             <AiOutlineClose
               onClick={() => setOpenMenu(false)}
               className="text-xl text-primary"

@@ -1,10 +1,10 @@
-import React from "react";
-import { GrMail } from "react-icons/gr";
-import { BiUser } from "react-icons/bi";
-import logo from "../../assets/image/logo.png";
+import React from 'react'
+import { GrMail } from 'react-icons/gr'
+import { BiUser } from 'react-icons/bi'
+import logo from '../../assets/image/logo.png'
 
-import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { AiOutlineMenu } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -39,11 +39,11 @@ const Header = () => {
         </div>
       </div>
 
-      <div className=" flex justify-center shadow-[#00000066] shadow pb-2">
+      <div className=" flex justify-center shadow  pb-2">
         <img className="w-[120px]" src={logo} alt="" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

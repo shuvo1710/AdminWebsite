@@ -10,7 +10,6 @@ import { BsCartPlusFill, BsCash } from 'react-icons/bs'
 import { AiOutlineGateway } from 'react-icons/ai'
 
 const MenuBar = () => {
-  const routers = ({}) => {}
   return (
     <div className="pt-10 border-r bg-white">
       <div className="flex justify-center">

@@ -1,52 +1,52 @@
-import { createBrowserRouter } from "react-router-dom";
-import MainDashboard from "../Components/MainDashboard/MainDashboard";
-import MyAcount from "../Components/MyAccount/MyAccount";
-import AccountDetails from "../Components/AccountDetails/AccountDetails";
-import PurchaseHistory from "../Components/PurchaseHistory/PurchaseHistory";
-import CommissionWithdraw from "../Components/CommissionWithdraw/CommissionWithdraw";
-import CommissionLedger from "../Components/CommissionLedger/CommissionLedger";
-import Transactions from "../Components/Transactions/Transactions";
-import BalanceTransfer from "../Components/BalanceTransfer/BalanceTransfer";
-import SignIn from "../Components/SignIn/SignIn";
+import { createBrowserRouter } from 'react-router-dom'
+import MainDashboard from '../Components/MainDashboard/MainDashboard'
+import MyAcount from '../Components/MyAccount/MyAccount'
+import AccountDetails from '../Components/AccountDetails/AccountDetails'
+import PurchaseHistory from '../Components/PurchaseHistory/PurchaseHistory'
+import CommissionWithdraw from '../Components/CommissionWithdraw/CommissionWithdraw'
+import CommissionLedger from '../Components/CommissionLedger/CommissionLedger'
+import Transactions from '../Components/Transactions/Transactions'
+import BalanceTransfer from '../Components/BalanceTransfer/BalanceTransfer'
+import SignIn from '../Components/SignIn/SignIn'
 
 export const routes = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <MainDashboard></MainDashboard>,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <MyAcount />,
       },
       {
-        path: "/AccountDetails",
+        path: '/AccountDetails',
         element: <AccountDetails />,
       },
       {
-        path: "/PurchaseHistory",
+        path: '/PurchaseHistory',
         element: <PurchaseHistory />,
       },
       {
-        path: "/commissionWithdraw",
+        path: '/commissionWithdraw',
         element: <CommissionWithdraw />,
       },
       {
-        path: "/CommissionLedger",
+        path: '/CommissionLedger',
         element: <CommissionLedger />,
       },
       {
-        path: "/Transactions",
+        path: '/Transactions',
         element: <Transactions />,
       },
       {
-        path: "/BalanceTransfer",
+        path: '/BalanceTransfer',
         element: <BalanceTransfer />,
       },
     ],
   },
 
   {
-    path: "/singin",
+    path: '/singin',
     element: <SignIn />,
   },
-]);
+])

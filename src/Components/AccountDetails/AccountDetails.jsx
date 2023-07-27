@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Select from 'react-select'
 import './AccountDetails.css'
 
@@ -19,98 +19,98 @@ const AccountDetails = () => {
 
           {/*  */}
           <from className="">
-            <div class=" ">
-              <div class="relative mb-10 inputDiv">
+            <div className=" ">
+              <div className="relative mb-10 inputDiv">
                 <input
                   required
                   type="text"
                   id="name"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="name"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   Name *
                 </label>
               </div>
 
-              <div class="relative mb-10 inputDiv">
+              <div className="relative mb-10 inputDiv">
                 <input
                   required
                   type="text"
                   id="nid"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="nid"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all "
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all "
                 >
                   NID*
                 </label>
               </div>
 
-              <div class="relative mb-10 inputDiv">
+              <div className="relative mb-10 inputDiv">
                 <input
                   required
                   type="text"
                   id="fatherName"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="fatherName"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   Father's Name *
                 </label>
               </div>
 
-              <div class="relative mb-10 inputDiv">
+              <div className="relative mb-10 inputDiv">
                 <input
                   required
                   type="text"
                   id="motherName"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="motherName"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   Mother's Name *
                 </label>
               </div>
 
-              <div class="relative mb-5 inputDiv">
+              <div className="relative mb-5 inputDiv">
                 <input
                   required
                   type="text"
                   id="address"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="address"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   Address
                 </label>
               </div>
 
-              <div class="relative mb-5">
+              <div className="relative mb-5">
                 <label
                   for="email"
-                  class=" text-sm left-0 text-gray-600 cursor-text top-0 peer-focus:text-primary transition-all"
+                  className=" text-sm left-0 text-gray-600 cursor-text top-0 peer-focus:text-primary transition-all"
                 >
                   District *
                 </label>
                 <select
                   type="text"
                   id="district"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 >
                   <option selected value="">
@@ -124,23 +124,23 @@ const AccountDetails = () => {
                 {/* <Select className=" mt-2" options={options} /> */}
                 {/* <label
                   for="district"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   District *
                 </label> */}
               </div>
 
-              <div class="relative mb-10">
+              <div className="relative mb-10">
                 <label
                   for="email"
-                  class=" text-sm left-0 text-gray-600 cursor-text top-0 peer-focus:text-primary transition-all"
+                  className=" text-sm left-0 text-gray-600 cursor-text top-0 peer-focus:text-primary transition-all"
                 >
                   Thana/Upazila *
                 </label>
                 <select
                   type="text"
                   id="district"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 >
                   <option selected value="">
@@ -152,17 +152,17 @@ const AccountDetails = () => {
                 </select>
               </div>
 
-              <div class="relative mb-10 inputDiv">
+              <div className="relative mb-10 inputDiv">
                 <input
                   required
                   type="text"
                   id="email"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="email"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   Email *
                 </label>
@@ -186,50 +186,50 @@ const AccountDetails = () => {
 
           {/*  */}
           <from className="">
-            <div class=" ">
-              <div class="relative mb-10 inputDiv">
+            <div className=" ">
+              <div className="relative mb-10 inputDiv">
                 <input
                   required
                   type="text"
                   id="currentPass"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="currentPass"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   Current Password *
                 </label>
               </div>
 
-              <div class="relative mb-10 inputDiv">
+              <div className="relative mb-10 inputDiv">
                 <input
                   required
                   type="text"
                   id="newPass1"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="newPass1"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   New Password *
                 </label>
               </div>
 
-              <div class="relative mb-10 inputDiv">
+              <div className="relative mb-10 inputDiv">
                 <input
                   required
                   type="text"
                   id="newPass2"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="newPass2"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   New Password *
                 </label>
@@ -250,34 +250,34 @@ const AccountDetails = () => {
               Pin change
             </h1>
 
-            <div class=" ">
-              <div class="relative mb-10 inputDiv">
+            <div className=" ">
+              <div className="relative mb-10 inputDiv">
                 <input
                   required
                   type="text"
                   id="currentPin"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="currentPin"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   Current PIN *
                 </label>
               </div>
 
-              <div class="relative mb-10 inputDiv">
+              <div className="relative mb-10 inputDiv">
                 <input
                   required
                   type="text"
                   id="newPIN"
-                  class="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
+                  className="border-b py-1 focus:outline-none focus:border-primary focus:border-b-2 transition-colors peer w-full"
                   autocomplete="off"
                 />
                 <label
                   for="newPIN"
-                  class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
+                  className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-primary transition-all"
                 >
                   New PIN *
                 </label>
@@ -298,7 +298,7 @@ const AccountDetails = () => {
               Upload your photo
             </h1>
 
-            <div class=" ">
+            <div className=" ">
               <input
                 type="file"
                 className="file-input  file-input-primary w-full mb-5 "

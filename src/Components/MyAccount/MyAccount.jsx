@@ -7,7 +7,7 @@ const MyAccount = () => {
   return (
     <div className="p-3 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] mt-5 mb-4">
       <h1>Welcome Mr./Mrs. Md Shahidul Islam!</h1>
-      <div className="mt-5  border-b border-[rgba(0,0,0,0.31)] shadow-md pb-2">
+      <div className="mt-5 shadow pb-2">
         <img className="w-full max-w-full" src={bannar} alt="" />
       </div>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 my-10">
